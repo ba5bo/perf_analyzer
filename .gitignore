@@ -6,3 +6,4 @@ artifacts/
 
 # Avoid squashing local people's file for now
 /.vscode
+.venv/*
