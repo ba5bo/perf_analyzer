@@ -209,6 +209,7 @@ ChatCompletionClient::PreRunProcessing(
     CURL* curl, ChatCompletionRequest* request, const Headers& headers)
 {
   curl_easy_setopt(curl, CURLOPT_URL, url_.c_str());
+  std::cout<< "url: " << url_ << std::endl;
   curl_easy_setopt(curl, CURLOPT_USERAGENT, "libcurl-agent/1.0");
   curl_easy_setopt(curl, CURLOPT_POST, 1L);
   curl_easy_setopt(curl, CURLOPT_TCP_NODELAY, 1L);

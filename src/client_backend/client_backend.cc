@@ -184,6 +184,7 @@ ClientBackend::Create(
     std::unique_ptr<ClientBackend>* client_backend)
 {
   std::unique_ptr<ClientBackend> local_backend;
+  std::cout<< "Create BackEnd to Url: "<<url<<" protocol: "<<protocol<<" ssl_options: "<<ssl_options<<" compression_algorithm: "<<compression_algorithm<<" verbose: "<<verbose<<" triton_server_path: "<<triton_server_path<<" model_repository_path: "<<model_repository_path<<" metrics_url: "<<metrics_url<<" input_tensor_format: "<<input_tensor_format<<" output_tensor_format: "<<output_tensor_format;
   if (kind == TRITON) {
     RETURN_IF_CB_ERROR(tritonremote::TritonClientBackend::Create(
         url, protocol, ssl_options, trace_options,

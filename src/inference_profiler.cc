@@ -730,7 +730,7 @@ InferenceProfiler::ProfileHelper(
     PerfStatus measurement_perf_status;
     measurement_perf_status.concurrency = experiment_perf_status.concurrency;
     measurement_perf_status.request_rate = experiment_perf_status.request_rate;
-    RETURN_IF_ERROR(manager_->CheckHealth());
+     RETURN_IF_ERROR(manager_->CheckHealth());
 
     MeasureConfig measure_config;
     if (measurement_mode_ == MeasurementMode::TIME_WINDOWS) {

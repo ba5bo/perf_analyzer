@@ -37,6 +37,7 @@ int
 main(int argc, char* argv[])
 {
   int exit_code = 0;
+  std::cout<<"starting...."<<std::endl;
   try {
     triton::perfanalyzer::CLParser clp;
     pa::PAParamsPtr params = clp.Parse(argc, argv);

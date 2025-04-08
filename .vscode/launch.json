@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/perf_analyzer/src/perf-analyzer-build/perf_analyzer",
-            "args":["-m","qwq","--async","--stability-percentage","999","--warmup-request-count","0","--request-count","10","-i","http","--service-kind","openai","common.py:188","--endpoint","v1/completions","--input-data","artifacts/qwq-openai-completions-concurrency1/inputs.json","--profile-export-file","artifacts/qwq-openai-completions-concurrency1/profile_export.json"],
+            "args":["-m","qwq","--async","--stability-percentage","999","--warmup-request-count","0","--request-count","10","-i","http","--service-kind","openai","common.py:188","--endpoint","v1/completions","--input-data","artifacts/qwq-openai-completions-concurrency1/inputs.json","--profile-export-file","artifacts/qwq-openai-completions-concurrency1/profile_export.json","-v","-v","-u","http://192.168.81.18:11436"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
